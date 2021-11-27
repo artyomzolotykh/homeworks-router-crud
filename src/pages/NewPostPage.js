@@ -14,7 +14,7 @@ const NewPostPage = props => {
 
   return (
     <div className="NewPostPage">
-      <NavLink to="/">Close</NavLink>
+      <NavLink to="/homeworks-router-crud/">Close</NavLink>
       <form onSubmit={handleSubmit}>
         <textarea placeholder="Пост, относящийся к курсу React" value={props.message} onChange={handleMessageChange}></textarea>
         <button type="submit">Опубликовать</button>

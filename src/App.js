@@ -29,7 +29,7 @@ function App() {
       }
     })
       .then(() => {
-        document.location.href = '/';
+        document.location.href = '/homeworks-router-crud/';
       })
   }
 
@@ -42,7 +42,7 @@ function App() {
       method: 'DELETE'
     })
       .then(() => {
-        document.location.href = '/';
+        document.location.href = '/homeworks-router-crud/';
       })
   }
 
@@ -62,7 +62,7 @@ function App() {
       }
     })
       .then(() => {
-        document.location.href = '/';
+        document.location.href = '/homeworks-router-crud/';
       })
   }
 
@@ -75,12 +75,12 @@ function App() {
       <div className="App">
         <Routes>
           <Route
-            path="/"
+            path="/homeworks-router-crud/"
             exact
             element={<PostsPage listing={listing} />}
           />
           <Route
-            path="/posts/new"
+            path="/homeworks-router-crud/posts/new"
             exact
             element={
               <NewPostPage
@@ -91,7 +91,7 @@ function App() {
               />}
             />
           <Route
-            path="/posts/:id"
+            path="/homeworks-router-crud/posts/:id"
             exact
             element={listing.length ? 
               (<PostCardPage listing={listing} deletePost={deletePost} changePostSubmit={changePostSubmit} />) : 
